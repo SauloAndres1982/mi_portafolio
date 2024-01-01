@@ -1,6 +1,119 @@
-<a href="/">Inicio</a>
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %} Acerca de mi {% endblock %}
+
+{% block image-header %} about {% endblock %}
+
+{% block title-header %} 
+</div>
+
+{% endblock %}
+<div class="col-12 titulos">
+    <div>
+        <h1 class="display-4 fw-bold">Saulo Andrés Carmoma Toro</h1>
+    </div>
+    <div>
+        <h3 class="fs-2">Desarrollador Web</h3>
+    </div>
+</div>
+
+{% block content %} 
+
+<div class="row d-flex">
+    <div class="col-4 offset-md-auto">
+        <img class="img-fluid img-thumbnail img-circle img-perfil " src="img/foto-perfil.png" alt="">
+    </div>
+    <div class="col-6">
+        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit temporibus distinctio expedita enim, libero pariatur aliquam ullam molestiae debitis eos nobis at ipsa eveniet cum officiis fuga incidunt eius ex?</h4>
+    </div>
+</div> 
+
+<div class="row d-flex pt-5">
+    <div class="col-12">
+        <h2 class="fw-bold">Formación Académica</h2>
+        <h3>Formación Nº 1</h3>
+        <p><strong>Título obtenido:</strong> Lorem ipsum dolor</p>
+        <p><strong>Descripción:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio atque praesentium fugiat doloremque, repellendus minus nisi enim nam voluptas velit beatae assumenda! Necessitatibus, eum vitae voluptates sunt quasi optio.</p>
+
+        <hr>
+
+        <h3>Formación Nº 2</h3>
+        <p><strong>Título obtenido:</strong> Lorem ipsum dolor</p>
+        <p><strong>Descripción:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio atque praesentium fugiat doloremque, repellendus minus nisi enim nam voluptas velit beatae assumenda! Necessitatibus, eum vitae voluptates sunt quasi optio.</p>
+        <hr>
+        <h3>Formación Nº 3</h3>
+        <p><strong>Título obtenido:</strong> Lorem ipsum dolor</p>
+        <p><strong>Descripción:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio atque praesentium fugiat doloremque, repellendus minus nisi enim nam voluptas velit beatae assumenda! Necessitatibus, eum vitae voluptates sunt quasi optio.</p>
+
+        <hr>
+        <h2 class="fw-bold">Conocimientos</h2>
+        <section class="skills" id="skills">
+            <div class="skills__container" id="skills">
+                <div class="card__skills">
+                    <div class="skill__thumbnail">
+                        <img class="skill__logo" src={% static "core/img/skills/java-svgrepo-com.svg" %} alt="html5">
+                    </div>
+
+                    <div class="skill__texto">
+                        <p class="skill__titulo">JavaSpring</p>
+                    </div>
+                </div>
+
+                <div class="card__skills">
+                    <div class="skill__thumbnail">
+                        <img class="skill__logo" src={% static "core/img/skills/spring.png" %} alt="html5">
+                    </div>
+                    <div class="skill__texto">
+                        <p class="skill__titulo">Spring Boot</p>
+                    </div>
+                </div>
+
+                <div class="card__skills">
+                    <div class="skill__thumbnail">
+                        <img class="skill__logo" src={% static "core/img/skills/python.jpeg" %} alt="html5">
+                    </div>
+                    <div class="skill__texto">
+                        <p class="skill__titulo">Python</p>
+                    </div>
+                </div>
+
+                <div class="card__skills">
+                    <div class="skill__thumbnail">
+                        <img class="skill__logo" src={% static "core/img/skills/django-icon.svg" %} alt="html5">
+                    </div>
+                    <div class="skill__texto">
+                        <p class="skill__titulo">Django</p>
+                    </div>
+                </div>
+
+                <div class="card__skills">
+                    <div class="skill__thumbnail">
+                        <img class="skill__logo" src={% static "core/img/skills/git-svgrepo-com.jpg" %} alt="html5">
+                    </div>
+                    <div class="skill__texto">
+                        <p class="skill__titulo">Git</p>
+                    </div>
+                </div>
+           
+
+                <div class="card__skills">
+                    <div class="skill__thumbnail">
+                        <img class="skill__logo" src={% static "core/img/skills/postgresql-logo-svgrepo-com.svg" %} alt="html5">
+                    </div>
+                    <div class="skill__texto">
+                        <p class="skill__titulo">PostgreSQL</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+    </div>
+
+</div>
 
 
-<h1> Mi portafolio personal</h1>
-<h3>Acerca de ...</h3>
-<p>Hola soy Saulito y soy programador junior</p>
+
+{% endblock %}
