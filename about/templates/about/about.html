@@ -32,22 +32,22 @@
 
 <div class="row d-flex pt-5">
     <div class="col-12">
-        <h2 class="fw-bold">Formación Académica</h2>
-        <h3>Formación Nº 1</h3>
-        <p><strong>Título obtenido:</strong> Lorem ipsum dolor</p>
-        <p><strong>Descripción:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio atque praesentium fugiat doloremque, repellendus minus nisi enim nam voluptas velit beatae assumenda! Necessitatibus, eum vitae voluptates sunt quasi optio.</p>
 
-        <hr>
-
-        <h3>Formación Nº 2</h3>
-        <p><strong>Título obtenido:</strong> Lorem ipsum dolor</p>
-        <p><strong>Descripción:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio atque praesentium fugiat doloremque, repellendus minus nisi enim nam voluptas velit beatae assumenda! Necessitatibus, eum vitae voluptates sunt quasi optio.</p>
-        <hr>
-        <h3>Formación Nº 3</h3>
-        <p><strong>Título obtenido:</strong> Lorem ipsum dolor</p>
-        <p><strong>Descripción:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio atque praesentium fugiat doloremque, repellendus minus nisi enim nam voluptas velit beatae assumenda! Necessitatibus, eum vitae voluptates sunt quasi optio.</p>
-
-        <hr>
+        
+        {% for form in formacion  %}
+            
+        
+        
+        
+            <h2 class="fw-bold">Formación Académica</h2>
+            <h3>Formación Nº {{ form.id }}</h3>
+            <p><strong>Título obtenido:</strong> {{form.titulo}}</p>
+            <p><strong>Descripción:</strong> {{ form.descripcion }}</p>        
+            <hr>
+            
+        {% endfor %}
+        
+        
         <h2 class="fw-bold">Conocimientos</h2>
         <section class="skills" id="skills">
             <div class="skills__container" id="skills">
