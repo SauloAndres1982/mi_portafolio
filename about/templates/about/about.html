@@ -48,64 +48,25 @@
         {% endfor %}
         
         
+             
+        
+            
+        
         <h2 class="fw-bold">Conocimientos</h2>
         <section class="skills" id="skills">
             <div class="skills__container" id="skills">
-                <div class="card__skills">
-                    <div class="skill__thumbnail">
-                        <img class="skill__logo" src={% static "core/img/skills/java-svgrepo-com.svg" %} alt="html5">
-                    </div>
+                
+                {% for skill in skills  %}                   
+                    <div class="card__skills">
+                        <div class="skill__thumbnail">
+                            <img class="skill__logo" src="{{ skill.imagen.url }}" alt="html5">
+                        </div>
 
-                    <div class="skill__texto">
-                        <p class="skill__titulo">JavaSpring</p>
+                        <div class="skill__texto">
+                            <p class="skill__titulo">{{ skill.titulo }}</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card__skills">
-                    <div class="skill__thumbnail">
-                        <img class="skill__logo" src={% static "core/img/skills/spring.png" %} alt="html5">
-                    </div>
-                    <div class="skill__texto">
-                        <p class="skill__titulo">Spring Boot</p>
-                    </div>
-                </div>
-
-                <div class="card__skills">
-                    <div class="skill__thumbnail">
-                        <img class="skill__logo" src={% static "core/img/skills/python.jpeg" %} alt="html5">
-                    </div>
-                    <div class="skill__texto">
-                        <p class="skill__titulo">Python</p>
-                    </div>
-                </div>
-
-                <div class="card__skills">
-                    <div class="skill__thumbnail">
-                        <img class="skill__logo" src={% static "core/img/skills/django-icon.svg" %} alt="html5">
-                    </div>
-                    <div class="skill__texto">
-                        <p class="skill__titulo">Django</p>
-                    </div>
-                </div>
-
-                <div class="card__skills">
-                    <div class="skill__thumbnail">
-                        <img class="skill__logo" src={% static "core/img/skills/git-svgrepo-com.jpg" %} alt="html5">
-                    </div>
-                    <div class="skill__texto">
-                        <p class="skill__titulo">Git</p>
-                    </div>
-                </div>
-           
-
-                <div class="card__skills">
-                    <div class="skill__thumbnail">
-                        <img class="skill__logo" src={% static "core/img/skills/postgresql-logo-svgrepo-com.svg" %} alt="html5">
-                    </div>
-                    <div class="skill__texto">
-                        <p class="skill__titulo">PostgreSQL</p>
-                    </div>
-                </div>
+                {% endfor %}
 
             </div>
         </section>
