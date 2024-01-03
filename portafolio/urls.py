@@ -1,7 +1,7 @@
 from core import views
 from portafolio_backend.views import portafolio
 from about.views import about
-from blog.views import blog, opiniones
+from blog.views import blog
 
 from django.conf import settings
 from django.contrib import admin
@@ -15,7 +15,7 @@ urlpatterns = [
     path("portafolio/", portafolio, name="portafolio"),
     path("contacto/", views.contacto, name="contacto"),
     path("blog/", blog, name="blog"),
-    path("blog1/", opiniones, name="opiniones"),
+
 ]
 
 if settings.DEBUG:
