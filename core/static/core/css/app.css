@@ -17,6 +17,10 @@
     background-image: url(../img/portaafolio-bg2.jpeg);
 }
 
+.blog {
+    background-image: url(../img/im4.jpg);
+}
+
 .imagen-fondo {
     background-position: center center;
     min-height: 60vh;
@@ -122,4 +126,40 @@
     margin-top: 5px;
     font-size: 16px;
     color: #033F62;
+}
+
+/* styles.css o tu archivo de estilos principal */
+
+/* styles.css o tu archivo de estilos principal */
+
+.blog-post {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #e6e2e2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post__title {
+    font-size: 24px;
+    color: #333;
+}
+
+.blog-post__meta {
+    margin-bottom: 10px;
+}
+
+.blog-post__separator {
+    border: 1px solid #ddd;
+}
+
+.skill__thumbnail {
+    max-width: 40%;
+    margin-right: 20px;
+}
+
+.skill__logo {
+    width: 100%;
+    height: auto;
 }

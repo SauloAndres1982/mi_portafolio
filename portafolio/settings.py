@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'core',
     'about',
     'portafolio_backend',
+    'blog',
     'bootstrap4',
 ]
 
