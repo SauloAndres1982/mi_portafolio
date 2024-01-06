@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+{% block title %} Diario del ciclista {% endblock %}
+
+{% block image-header %} blog {% endblock %}
+
+{% block title-header %} 
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+
+        <h1> {{ public.title }} </h1>
+        <p class="lead"> {{ public.content }} </p>
+        {{ public.create_on }}
+        <a href="{% url 'index' %}"> Back home</a>
+    
+    </div>
+
+
+
+{% endblock content %}

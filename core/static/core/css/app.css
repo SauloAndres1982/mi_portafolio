@@ -2,7 +2,7 @@
 /* IMAGENES DE FONDO DE LAS PAGINAS */
 
 .home {
-    background-image: url(../img/about-me.jpg);
+    background-image: url(../img/home1.jpeg);
 }
 
 .about {
@@ -19,6 +19,13 @@
 
 .blog {
     background-image: url(../img/im4.jpg);
+}
+
+.index {
+    background-image: url(../img/im10.jpg);
+}
+.post_detail {
+    background-image: url(../img/im6.jpg);
 }
 
 .imagen-fondo {
@@ -130,8 +137,6 @@
 
 /* styles.css o tu archivo de estilos principal */
 
-/* styles.css o tu archivo de estilos principal */
-
 .blog-post {
     max-width: 600px;
     margin: 20px auto;
@@ -152,14 +157,4 @@
 
 .blog-post__separator {
     border: 1px solid #ddd;
-}
-
-.skill__thumbnail {
-    max-width: 40%;
-    margin-right: 20px;
-}
-
-.skill__logo {
-    width: 100%;
-    height: auto;
 }

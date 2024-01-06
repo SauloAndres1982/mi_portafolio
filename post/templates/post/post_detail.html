@@ -1,0 +1,48 @@
+{% extends 'core/base.html' %}
+
+{% load bootstrap4 %}
+
+
+{% load crispy_forms_tags %}
+
+{% block title %} Matemáticas al día {% endblock %}
+
+{% block image-header %} index {% endblock %}
+
+{% block title-header %} 
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+
+        <h1> {{ post.title }} </h1>
+        <p class="lead"> {{ post.content }} </p>
+        {{ post.create_on }}
+        <a href="{% url 'index' %}"> Back home</a>
+        
+        <div style="margin: 200px; padding-right: 70px; margin-left: 70px">
+            <form method="post">
+
+                {% csrf_token %}
+
+                {{ form|crispy }}
+                <input class = "btn btn-primary" type="submit" name="enviar" value="comentarios">
+
+
+            </form>
+        </div>
+        {% for comentario in comments %}
+
+            <p> {{comentario.name}} {{ comentario.content }} </p>
+
+        {% endfor %}
+
+    </div>
+
+
+
+{% endblock content %}
+
+
+

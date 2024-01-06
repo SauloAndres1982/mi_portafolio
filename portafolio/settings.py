@@ -43,7 +43,10 @@ INSTALLED_APPS = [
     'about',
     'portafolio_backend',
     'blog',
+    'post',
     'bootstrap4',
+    'crispy_forms',
+    'crispy_bootstrap4'
 ]
 
 MIDDLEWARE = [
@@ -105,6 +108,8 @@ AUTH_PASSWORD_VALIDATORS = [
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 # Internationalization
